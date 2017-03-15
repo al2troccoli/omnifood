@@ -220,7 +220,7 @@ header{
     margin-top: 20px;
 }
 
-.sticky .logo-black{
+.logo-black{
     display: none;
     height: 50px;
     width: auto;
@@ -257,6 +257,18 @@ header{
 .main-nav li a:hover,
 .main-nav li a:active{
     border-bottom: 2px solid #e67e22;
+}
+
+
+/* ---- MOBILE NAV ---- */
+
+.mobile-nav-icon{
+    font-size: 200%;
+    float: right;
+    color: #fff;
+    margin-top: 20px;
+    display: none;
+    cursor: pointer;
 }
 
 /* ---- STICKY NAV ---- */
@@ -514,7 +526,7 @@ cite img{
 /* ------------------------------------------------------------ */
 
 .contact-form{
-    width: 60%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -540,7 +552,29 @@ textarea {
     outline: none;
 }
 
+.map-box{
+    width: 100%;
+    height: 550px;
+    position: relative;
+}
 
+.map{
+    width: 100%;
+    height: 550px;
+    z-index: 1;
+}
+
+.form-box{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 50%;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 550px;
+    padding: 30px 0;
+    z-index: 10;
+}
 
 /* ------------------------------------------------------------ */
 /* FOOTER */
@@ -626,4 +660,25 @@ footer p{
     margin-top: 20px;
 }
 
+/* ------------------------------------------------------------ */
+/* ANIMATION */
+/* ------------------------------------------------------------ */
+
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3
+{
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+.js--wp-4 { animation-duration: 1s;}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated
+{
+    opacity: 1;
+}
 
